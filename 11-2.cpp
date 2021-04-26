@@ -1,9 +1,6 @@
-
 #include <iostream>
 #include <string>
-
 using namespace std;
-
 struct lab
 {
 	int data;
@@ -17,7 +14,7 @@ lab* vvod(int size)
 	lab* p = new lab;
 	lab* head = new lab;
 	head = NULL;
-	cout << "Ââåäèòå ïåðâûé ýëåìåíò ñïèñêà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã¥Ã°Ã¢Ã»Ã© Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã±Ã¯Ã¨Ã±ÃªÃ : ";
 	cin >> p->data;
 	head = p;
 	p->next = NULL;
@@ -29,7 +26,7 @@ lab* vvod(int size)
 		lab* u = p;
 		p->next = r;
 		p = p->next;
-		cout << "Ââåäèòå ýëåìåíò ñïèñêà: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã±Ã¯Ã¨Ã±ÃªÃ : ";
 		cin >> p->data;
 		p->next = NULL;
 		p->prev = u;
@@ -86,7 +83,7 @@ void print(lab* head)
 {
 	if (head == NULL)
 	{
-		cout << "Ñïèñîê ïóñò.";
+		cout << "Ã‘Ã¯Ã¨Ã±Ã®Ãª Ã¯Ã³Ã±Ã².";
 		cout << endl;
 	}
 	else {
@@ -105,13 +102,13 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	int size = -1, n = 0;
-	cout << "Ââåäèòå êîë-âî ýëåìåíòîâ ñïèñêà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«-Ã¢Ã® Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢ Ã±Ã¯Ã¨Ã±ÃªÃ : ";
 	while (size <= 0)
 	{
 		cin >> size;
 
 		if (size <= 0)
-			cout << "Íåâåðíûé ââîä.";
+			cout << "ÃÃ¥Ã¢Ã¥Ã°Ã­Ã»Ã© Ã¢Ã¢Ã®Ã¤.";
 	}
 
 	lab* head = vvod(size);
@@ -122,8 +119,6 @@ int main()
 	de(head, size);
 	print(head);
 	cout << endl;
-
-
 	delete head;
 	return(0);
 }

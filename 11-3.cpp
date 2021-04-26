@@ -12,7 +12,7 @@ Stack* make(int n)
 {
 	if (n <= 0)
 	{
-		cout << "Ñòåê íå ìîæåò áûòü ñîçäàí";
+		cout << "Стек не может быть создан";
 		return NULL;
 	}
 	Stack* top, * p;
@@ -35,7 +35,7 @@ Stack* make(int n)
 
 void print(Stack* top)
 {
-	if (top == NULL) cout << "Ñòåê ïóñò" << endl;
+	if (top == NULL) cout << "Стек пуст" << endl;
 	else {
 		Stack* p = top;
 		while (p != NULL)
@@ -69,7 +69,7 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int n;
-	cout << "Ââåäèòå êîëè÷åñòâî ýëåìåíòîâ â ñòåêå: ";
+	cout << "Введите количество элементов в стеке: ";
 	cin >> n;
 
 	Stack* st = make(n);
@@ -79,7 +79,7 @@ int main()
 
 	add(st);
 
-	cout << "Ñòåê ïîñëå äîáàâëåíèÿ: ";
+	cout << "Стек после добавления: ";
 	print(st);
 	return 0;
 }

@@ -13,7 +13,7 @@ Queue* make(int n, Queue*& first, Queue*& last)
 {
 	if (n <= 0)
 	{
-		cout << "Î÷åðåäü íå ìîæåò áûòü ñîçäàíà" << endl;
+		cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ ÑÐ¾Ð·Ð´Ð°Ð½Ð°" << endl;
 		return NULL;
 	}
 	Queue* p = new Queue;
@@ -72,19 +72,19 @@ void del_even(Queue* last)
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	cout << "Ââåäèòå êîëè÷åñòâî ýëåìåíòîâ î÷åðåäè: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: ";
 	cin >> n;
 
 	Queue* first, * last;
 
 	make(n, first, last);
 
-	cout << "Î÷åðåäü: ";
+	cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ: ";
 	print(last);
 
 	del_even(last);
 
-	cout << "Î÷åðåäü ïîñëå óäàëåíèÿ: ";
+	cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ Ð¿Ð¾ÑÐ»Ðµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ: ";
 	print(last);
 	return 0;
 }

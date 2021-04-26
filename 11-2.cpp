@@ -14,7 +14,7 @@ lab* vvod(int size)
 	lab* p = new lab;
 	lab* head = new lab;
 	head = NULL;
-	cout << "Ââåäèòå ïåðâûé ýëåìåíò ñïèñêà: ";
+	cout << "Введите первый элемент списка: ";
 	cin >> p->data;
 	head = p;
 	p->next = NULL;
@@ -26,7 +26,7 @@ lab* vvod(int size)
 		lab* u = p;
 		p->next = r;
 		p = p->next;
-		cout << "Ââåäèòå ýëåìåíò ñïèñêà: ";
+		cout << "Введите элемент списка: ";
 		cin >> p->data;
 		p->next = NULL;
 		p->prev = u;
@@ -83,7 +83,7 @@ void print(lab* head)
 {
 	if (head == NULL)
 	{
-		cout << "Ñïèñîê ïóñò.";
+		cout << "Список пуст.";
 		cout << endl;
 	}
 	else {
@@ -102,13 +102,13 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	int size = -1, n = 0;
-	cout << "Ââåäèòå êîë-âî ýëåìåíòîâ ñïèñêà: ";
+	cout << "Введите кол-во элементов списка: ";
 	while (size <= 0)
 	{
 		cin >> size;
 
 		if (size <= 0)
-			cout << "Íåâåðíûé ââîä.";
+			cout << "Неверный ввод.";
 	}
 
 	lab* head = vvod(size);

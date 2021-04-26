@@ -1,4 +1,4 @@
-//стек через структуры
+//СЃС‚РµРє С‡РµСЂРµР· СЃС‚СЂСѓРєС‚СѓСЂС‹
 #include <iostream>
 using namespace std;
 double a;
@@ -12,7 +12,7 @@ Stack* make(int n)
 {
 	if (n <= 0)
 	{
-		cout << "Стек не может быть создан";
+		cout << "Г‘ГІГҐГЄ Г­ГҐ Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј Г±Г®Г§Г¤Г Г­";
 		return NULL;
 	}
 	Stack* top, * p;
@@ -35,7 +35,7 @@ Stack* make(int n)
 
 void print(Stack* top)
 {
-	if (top == NULL) cout << "Стек пуст" << endl;
+	if (top == NULL) cout << "Г‘ГІГҐГЄ ГЇГіГ±ГІ" << endl;
 	else {
 		Stack* p = top;
 		while (p != NULL)
@@ -69,17 +69,17 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int n;
-	cout << "Введите количество элементов в стеке: ";
+	cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Гў Г±ГІГҐГЄГҐ: ";
 	cin >> n;
 
 	Stack* st = make(n);
 
-	cout << "Ваш стек: ";
+	cout << "Г‚Г Гё Г±ГІГҐГЄ: ";
 	print(st);
 
 	add(st);
 
-	cout << "Стек после добавления: ";
+	cout << "Г‘ГІГҐГЄ ГЇГ®Г±Г«ГҐ Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї: ";
 	print(st);
 	return 0;
 }

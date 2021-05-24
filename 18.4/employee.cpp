@@ -1,4 +1,4 @@
-#include "employed.h" 
+#include "employee.h" 
 employee::employee() : Person()
 {
 	post = "";

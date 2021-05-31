@@ -8,7 +8,7 @@ int x;
 int len = 6;
 int result[6] = { 1000,1000,1000,1000,1000,1000 };
 bool flag[6] = { false,false,false,false,false,false };
-vector <vector<int>> matrix = { {0 ,12,18, 5,0 ,34 },
+vector <vector<int>> matrix = { {0,0,0,0,0,0},
                                 {12, 0 ,16 ,0,53 ,45 },
                                 {18,16 ,0 ,3 ,21,0 },
                                 {5 ,0 ,3 ,0 ,0 ,0 },
